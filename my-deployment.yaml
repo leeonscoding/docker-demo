@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demoapp
+  name: my-deployment
   labels:
     app: demoapp
 spec:
@@ -15,7 +15,7 @@ spec:
         app: demoapp
     spec:
       containers:
-        - name: demoapp
+        - name: app
           image: leeonscoding/demoapp:latest
           ports:
             - containerPort: 8080
